@@ -23,8 +23,15 @@ class ViewController: UIViewController {
         configFontEndColour()
         
     }
-
+    
+    
+    @IBAction func tappedRegisterButton(_ sender: UIButton) {
+        
+    }
+    
     func configFontEndColour() {
+        registerButton.isEnabled = false
+        
         view.backgroundColor = .orange
         
         nameTextfield.placeholder = "Digite seu nome"
@@ -50,7 +57,7 @@ class ViewController: UIViewController {
         registerButton.layer.cornerRadius = 20
     }
 
-    @IBOutlet var tappedRegisterButton: UIView!
+    
     
 }
 
@@ -67,6 +74,13 @@ extension ViewController: UITextFieldDelegate {
             textField.layer.borderColor = UIColor.red.cgColor
         } else {
             textField.layer.borderColor = UIColor.lightGray.cgColor
+        }
+        
+        if nameTextfield.text == "" || addressTextField.text == "" || PasswordTextField.text == "" {
+            registerButton.isEnabled = false
+        } else {
+            registerButton.isEnabled = true
+            
         }
     }
     

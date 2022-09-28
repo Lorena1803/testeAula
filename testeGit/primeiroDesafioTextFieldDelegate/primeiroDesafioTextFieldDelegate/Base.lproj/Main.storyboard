@@ -47,6 +47,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedRegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vcD-HI-Xwp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -70,8 +73,7 @@
                         <outlet property="PasswordTextField" destination="0Xh-M8-Nky" id="EMB-cF-YHJ"/>
                         <outlet property="addressTextField" destination="zbK-Qb-4hU" id="bRr-dh-1cZ"/>
                         <outlet property="nameTextfield" destination="F2L-sz-dPn" id="0zd-F7-1Gq"/>
-                        <outlet property="registerButton" destination="Xbp-5f-d9b" id="jBq-XJ-jTP"/>
-                        <outlet property="tappedRegisterButton" destination="8bC-Xf-vdC" id="r4t-OV-ZLZ"/>
+                        <outlet property="registerButton" destination="Xbp-5f-d9b" id="y2r-SG-glY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
