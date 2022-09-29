@@ -41,9 +41,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbp-5f-d9b">
-                                <rect key="frame" x="70" y="362" width="250" height="40"/>
+                                <rect key="frame" x="70" y="457" width="250" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Vw3-q2-BWm"/>
+                                    <constraint firstAttribute="height" constant="40" id="Ufj-qh-PVT"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -51,14 +51,23 @@
                                     <action selector="tappedRegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vcD-HI-Xwp"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mk6-aR-bQh">
+                                <rect key="frame" x="20" y="347" width="350" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="umb-Ba-bzB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="F2L-sz-dPn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="11z-RR-r8a"/>
-                            <constraint firstItem="Xbp-5f-d9b" firstAttribute="top" secondItem="0Xh-M8-Nky" secondAttribute="bottom" constant="55" id="75z-CV-wQG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mk6-aR-bQh" secondAttribute="trailing" constant="20" id="2RK-Fo-EIl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xbp-5f-d9b" secondAttribute="trailing" constant="70" id="H5d-ll-PvV"/>
                             <constraint firstItem="0Xh-M8-Nky" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KUY-N1-Cse"/>
-                            <constraint firstItem="Xbp-5f-d9b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="LSO-DL-kSp"/>
+                            <constraint firstItem="Xbp-5f-d9b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="Nbb-BA-xLm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zbK-Qb-4hU" secondAttribute="trailing" constant="20" id="Ow0-Sh-aiy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Xh-M8-Nky" secondAttribute="trailing" constant="20" id="PpS-3t-8Tp"/>
                             <constraint firstItem="zbK-Qb-4hU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="THh-ES-ll0"/>
@@ -66,12 +75,15 @@
                             <constraint firstItem="F2L-sz-dPn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="ZFF-C0-vf8"/>
                             <constraint firstItem="0Xh-M8-Nky" firstAttribute="top" secondItem="zbK-Qb-4hU" secondAttribute="bottom" constant="40" id="eAO-eN-Jb1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F2L-sz-dPn" secondAttribute="trailing" constant="20" id="eli-N0-4ga"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xbp-5f-d9b" secondAttribute="trailing" constant="70" id="yFe-Yp-JO0"/>
+                            <constraint firstItem="Xbp-5f-d9b" firstAttribute="top" secondItem="mk6-aR-bQh" secondAttribute="bottom" constant="65" id="nAS-l6-fKs"/>
+                            <constraint firstItem="mk6-aR-bQh" firstAttribute="top" secondItem="0Xh-M8-Nky" secondAttribute="bottom" constant="40" id="qto-UE-rd5"/>
+                            <constraint firstItem="mk6-aR-bQh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="w1w-n6-Hzn"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="PasswordTextField" destination="0Xh-M8-Nky" id="EMB-cF-YHJ"/>
                         <outlet property="addressTextField" destination="zbK-Qb-4hU" id="bRr-dh-1cZ"/>
+                        <outlet property="confirmPasswordTextField" destination="mk6-aR-bQh" id="TgG-WX-aLp"/>
                         <outlet property="nameTextfield" destination="F2L-sz-dPn" id="0zd-F7-1Gq"/>
                         <outlet property="registerButton" destination="Xbp-5f-d9b" id="y2r-SG-glY"/>
                     </connections>
