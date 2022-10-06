@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Segunda Tela"/>
                                 <connections>
-                                    <segue destination="g64-ep-h0y" kind="show" id="835-3F-f8S"/>
+                                    <action selector="actionButtonTela1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LO5-eR-TwD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -33,6 +33,10 @@
                             <constraint firstItem="C5M-L1-0y9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uIK-hC-XiE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonTela1" destination="C5M-L1-0y9" id="lLl-If-TUH"/>
+                        <segue destination="g64-ep-h0y" kind="show" identifier="tela2" id="ge1-v8-Ozc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
