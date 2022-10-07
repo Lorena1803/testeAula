@@ -11,46 +11,44 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="exercicioNavegacao" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="exercicioNavegacao" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5M-L1-0y9">
-                                <rect key="frame" x="131.66666666666666" y="404.66666666666669" width="126.99999999999997" height="35"/>
+                                <rect key="frame" x="159.66666666666666" y="404.66666666666669" width="71" height="35"/>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Segunda Tela"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Modal"/>
                                 <connections>
-                                    <action selector="tappedTela2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c8E-dw-tOL"/>
+                                    <action selector="tappedModal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="weZ-TJ-qtQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBf-iC-ou1">
+                                <rect key="frame" x="164" y="558.66666666666663" width="62" height="35"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.92549019610000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Push"/>
+                                <connections>
+                                    <action selector="tappedPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WpN-s9-NJo"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
+                            <constraint firstItem="KBf-iC-ou1" firstAttribute="top" secondItem="C5M-L1-0y9" secondAttribute="bottom" constant="119.33" id="0zz-nV-HdL"/>
                             <constraint firstItem="C5M-L1-0y9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UMI-83-am8"/>
+                            <constraint firstItem="KBf-iC-ou1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bjS-Zo-5ch"/>
                             <constraint firstItem="C5M-L1-0y9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uIK-hC-XiE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ND5-xN-RSq"/>
-                    <connections>
-                        <segue destination="gUv-ui-QvQ" kind="show" identifier="tela2" id="wRF-O1-Flx"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1086" y="-2"/>
-        </scene>
-        <!--tela02ViewController-->
-        <scene sceneID="KFJ-xq-TWe">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="tela02ViewController" storyboardName="tela02ViewController" id="gUv-ui-QvQ" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="iXp-OR-OLG"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6gN-97-iVV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1782" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2E1-z0-lzl">
