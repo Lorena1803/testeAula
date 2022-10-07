@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Segunda Tela"/>
                                 <connections>
-                                    <segue destination="g64-ep-h0y" kind="show" id="MCP-Z7-dJd"/>
+                                    <action selector="tappedTela2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c8E-dw-tOL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,28 +35,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="ND5-xN-RSq"/>
                     <connections>
-                        <outlet property="buttonTela1" destination="C5M-L1-0y9" id="lLl-If-TUH"/>
+                        <segue destination="gUv-ui-QvQ" kind="show" identifier="tela2" id="wRF-O1-Flx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="909" y="-2"/>
+            <point key="canvasLocation" x="1086" y="-2"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="F67-8T-8Ai">
+        <!--tela02ViewController-->
+        <scene sceneID="KFJ-xq-TWe">
             <objects>
-                <viewController id="g64-ep-h0y" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DVk-p2-UjD">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="f50-5Q-M3z"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="5Y3-3m-QlQ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NEs-Sx-E3C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="tela02ViewController" storyboardName="tela02ViewController" id="gUv-ui-QvQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="iXp-OR-OLG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gN-97-iVV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1752" y="-2"/>
+            <point key="canvasLocation" x="1782" y="-2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2E1-z0-lzl">
@@ -80,9 +74,6 @@
     <resources>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

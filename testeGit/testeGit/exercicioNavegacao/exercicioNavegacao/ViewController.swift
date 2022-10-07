@@ -9,12 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var buttonTela1: UIButton!
    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func tappedTela2(_ sender: UIButton) {
+        performSegue(withIdentifier: "tela2", sender: nil)
+    }
+    
+    
     
     }
     
