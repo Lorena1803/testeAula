@@ -31,6 +31,12 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        nameTextField.text = ""
+        lastnameTextField.text = ""
+        yearsTextField.text = ""
+        profissaoTextField.text = "" 
+    }
     
 }
 struct Pessoa {
