@@ -15,6 +15,7 @@
 		5C22351828FF86F3006C30A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C22351628FF86F3006C30A8 /* LaunchScreen.storyboard */; };
 		5C22352028FF8710006C30A8 /* Tela02VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C22351F28FF8710006C30A8 /* Tela02VC.swift */; };
 		5C22352228FF871F006C30A8 /* Tela02VC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C22352128FF871F006C30A8 /* Tela02VC.storyboard */; };
+		5CE3E815290208A20080DDA4 /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3E814290208A20080DDA4 /* Pessoa.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5C22351928FF86F3006C30A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C22351F28FF8710006C30A8 /* Tela02VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela02VC.swift; sourceTree = "<group>"; };
 		5C22352128FF871F006C30A8 /* Tela02VC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela02VC.storyboard; sourceTree = "<group>"; };
+		5CE3E814290208A20080DDA4 /* Pessoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pessoa.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +69,27 @@
 				5C22351428FF86F3006C30A8 /* Assets.xcassets */,
 				5C22351628FF86F3006C30A8 /* LaunchScreen.storyboard */,
 				5C22351928FF86F3006C30A8 /* Info.plist */,
-				5C22351F28FF8710006C30A8 /* Tela02VC.swift */,
-				5C22352128FF871F006C30A8 /* Tela02VC.storyboard */,
+				5CE3E817290208ED0080DDA4 /* Tela02VC */,
+				5CE3E816290208C90080DDA4 /* Model */,
 			);
 			path = DesafioTransicaoDeDadosEntreTelas;
+			sourceTree = "<group>";
+		};
+		5CE3E816290208C90080DDA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CE3E814290208A20080DDA4 /* Pessoa.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CE3E817290208ED0080DDA4 /* Tela02VC */ = {
+			isa = PBXGroup;
+			children = (
+				5C22352128FF871F006C30A8 /* Tela02VC.storyboard */,
+				5C22351F28FF8710006C30A8 /* Tela02VC.swift */,
+			);
+			path = Tela02VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE3E815290208A20080DDA4 /* Pessoa.swift in Sources */,
 				5C22351028FF86F2006C30A8 /* ViewController.swift in Sources */,
 				5C22350C28FF86F2006C30A8 /* AppDelegate.swift in Sources */,
 				5C22352028FF8710006C30A8 /* Tela02VC.swift in Sources */,
