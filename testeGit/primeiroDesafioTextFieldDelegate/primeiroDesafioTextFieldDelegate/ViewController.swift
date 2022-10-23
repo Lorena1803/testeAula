@@ -97,15 +97,14 @@ extension ViewController: UITextFieldDelegate {
    
             }
         }
+    
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //        quando clica no retorn
+        textField.resignFirstResponder()
         
-        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-            //        quando clica no retorn
-            textField.resignFirstResponder()
-            
-            return true
-        }
-        
-        
+        return true
     }
     
 }
