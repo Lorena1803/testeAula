@@ -8,9 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var nameTextfield: UITextField!
-   
+    
     @IBOutlet weak var addressTextField: UITextField!
     
     @IBOutlet weak var PasswordTextField: UITextField!
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         addressTextField.delegate = self
         PasswordTextField.delegate = self
         confirmPasswordTextField.delegate = self
-       
+        
         nameTextfield.layer.borderWidth = 2
         nameTextfield.layer.borderColor = UIColor.lightGray.cgColor
         
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         registerButton.setTitleColor(.white, for: .normal)
         registerButton.layer.cornerRadius = 20
     }
-
+    
     
     
 }
@@ -94,18 +94,19 @@ extension ViewController: UITextFieldDelegate {
                 PasswordTextField.layer.borderColor = UIColor.red.cgColor
                 confirmPasswordTextField.layer.borderColor = UIColor.red.cgColor
                 registerButton.isEnabled = false
-   
+                
             }
         }
         
-        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-            //        quando clica no retorn
-            textField.resignFirstResponder()
-            
-            return true
-        }
+        
         
         
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //        quando clica no retorn
+        textField.resignFirstResponder()
+        
+        return true
+    }
 }
