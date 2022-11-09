@@ -5,6 +5,15 @@
 //  Created by Lorena on 20/10/22.
 //
 
+// Passo a passo
+// Criar a TableView
+// Fazer a ligação
+// Configurar a tableView
+// Criar Celula
+// Configurar Celula
+// Registrar a Celula
+// Configurar Exibicao da Celula
+
 import UIKit
 
 class ViewController: UIViewController {
