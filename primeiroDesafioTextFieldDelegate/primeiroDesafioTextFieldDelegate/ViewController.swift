@@ -97,10 +97,20 @@ extension ViewController: UITextFieldDelegate {
                 
             }
         }
+    
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //        quando clica no retorn
+        textField.resignFirstResponder()
+        
+<<<<<<< HEAD:primeiroDesafioTextFieldDelegate/primeiroDesafioTextFieldDelegate/ViewController.swift
         
         
         
-        
+=======
+        return true
+>>>>>>> exercicios/SegundoExercicioUITextFieldDelegate:testeGit/primeiroDesafioTextFieldDelegate/primeiroDesafioTextFieldDelegate/ViewController.swift
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
