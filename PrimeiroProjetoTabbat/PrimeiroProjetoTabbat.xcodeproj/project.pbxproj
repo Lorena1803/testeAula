@@ -16,6 +16,9 @@
 		5C3C78D5291DC0DA00F82275 /* Tela02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C78D4291DC0DA00F82275 /* Tela02ViewController.swift */; };
 		5C3C78D7291DC12000F82275 /* Tela03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C78D6291DC12000F82275 /* Tela03ViewController.swift */; };
 		5C3C78D9291DC2BC00F82275 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C78D8291DC2BC00F82275 /* TabBarController.swift */; };
+		5C3C78DF291DD6A100F82275 /* AddPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C78DD291DD6A100F82275 /* AddPhotoTableViewCell.swift */; };
+		5C3C78E0291DD6A100F82275 /* AddPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C3C78DE291DD6A100F82275 /* AddPhotoTableViewCell.xib */; };
+		5C3C78E3291DDA2900F82275 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C78E2291DDA2900F82275 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		5C3C78D4291DC0DA00F82275 /* Tela02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela02ViewController.swift; sourceTree = "<group>"; };
 		5C3C78D6291DC12000F82275 /* Tela03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03ViewController.swift; sourceTree = "<group>"; };
 		5C3C78D8291DC2BC00F82275 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		5C3C78DD291DD6A100F82275 /* AddPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoTableViewCell.swift; sourceTree = "<group>"; };
+		5C3C78DE291DD6A100F82275 /* AddPhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPhotoTableViewCell.xib; sourceTree = "<group>"; };
+		5C3C78E2291DDA2900F82275 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +68,53 @@
 		5C13EF1A291DBA4D00C38768 /* PrimeiroProjetoTabbat */ = {
 			isa = PBXGroup;
 			children = (
+				5C3C78E1291DDA1100F82275 /* Model */,
+				5C3C78DC291DD65500F82275 /* TableViewCell */,
+				5C3C78DB291DD63000F82275 /* TabBar */,
+				5C3C78DA291DD5D200F82275 /* ViewControllers */,
 				5C13EF1B291DBA4D00C38768 /* AppDelegate.swift */,
 				5C13EF1D291DBA4D00C38768 /* SceneDelegate.swift */,
-				5C13EF1F291DBA4D00C38768 /* Tela01ViewController.swift */,
-				5C3C78D4291DC0DA00F82275 /* Tela02ViewController.swift */,
-				5C3C78D6291DC12000F82275 /* Tela03ViewController.swift */,
 				5C13EF21291DBA4D00C38768 /* Main.storyboard */,
 				5C13EF24291DBA4E00C38768 /* Assets.xcassets */,
 				5C13EF26291DBA4E00C38768 /* LaunchScreen.storyboard */,
 				5C13EF29291DBA4E00C38768 /* Info.plist */,
-				5C3C78D8291DC2BC00F82275 /* TabBarController.swift */,
 			);
 			path = PrimeiroProjetoTabbat;
+			sourceTree = "<group>";
+		};
+		5C3C78DA291DD5D200F82275 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C13EF1F291DBA4D00C38768 /* Tela01ViewController.swift */,
+				5C3C78D4291DC0DA00F82275 /* Tela02ViewController.swift */,
+				5C3C78D6291DC12000F82275 /* Tela03ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5C3C78DB291DD63000F82275 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5C3C78D8291DC2BC00F82275 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		5C3C78DC291DD65500F82275 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5C3C78DD291DD6A100F82275 /* AddPhotoTableViewCell.swift */,
+				5C3C78DE291DD6A100F82275 /* AddPhotoTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		5C3C78E1291DDA1100F82275 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C3C78E2291DDA2900F82275 /* Person.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3C78E0291DD6A100F82275 /* AddPhotoTableViewCell.xib in Resources */,
 				5C13EF28291DBA4E00C38768 /* LaunchScreen.storyboard in Resources */,
 				5C13EF25291DBA4E00C38768 /* Assets.xcassets in Resources */,
 				5C13EF23291DBA4D00C38768 /* Main.storyboard in Resources */,
@@ -150,8 +192,10 @@
 				5C3C78D5291DC0DA00F82275 /* Tela02ViewController.swift in Sources */,
 				5C13EF20291DBA4D00C38768 /* Tela01ViewController.swift in Sources */,
 				5C13EF1C291DBA4D00C38768 /* AppDelegate.swift in Sources */,
+				5C3C78DF291DD6A100F82275 /* AddPhotoTableViewCell.swift in Sources */,
 				5C3C78D9291DC2BC00F82275 /* TabBarController.swift in Sources */,
 				5C13EF1E291DBA4D00C38768 /* SceneDelegate.swift in Sources */,
+				5C3C78E3291DDA2900F82275 /* Person.swift in Sources */,
 				5C3C78D7291DC12000F82275 /* Tela03ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
