@@ -22,6 +22,7 @@ class AddPhotoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        photoImageView.tintColor = .black
 
     }
     
